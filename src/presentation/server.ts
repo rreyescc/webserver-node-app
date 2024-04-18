@@ -3,18 +3,18 @@ import { envs } from '../config/envs';
 import path from 'path';
 
 interface Options {
-  serverPort: string,
-  publicPath: string
+  serverPort: number,
+  publicPath?: string
 }
 
 export class Server {
 
   private app = express();
-  private readonly serverPort: string;
+  private readonly serverPort: number;
   private readonly publicPath: string;
 
   constructor(options: Options) {
-    const {serverPort, publicPath} = options
+    const {serverPort, publicPath = 'public'} = options
     this.serverPort = serverPort;
     this.publicPath = publicPath;
   }

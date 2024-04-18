@@ -7,7 +7,7 @@ import { envs } from "./config/envs";
 
 function main() {
   const server = new Server({
-    serverPort: envs.SERVER_PORT || "3000",
+    serverPort: envs.SERVER_PORT,
     publicPath: envs.PUBLIC_PATH
   });
   server.start();
