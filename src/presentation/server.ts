@@ -3,14 +3,14 @@ import { envs } from '../config/envs';
 import path from 'path';
 
 interface Options {
-  serverPort: number,
+  serverPort: string,
   publicPath: string
 }
 
 export class Server {
 
   private app = express();
-  private readonly serverPort: number;
+  private readonly serverPort: string;
   private readonly publicPath: string;
 
   constructor(options: Options) {
