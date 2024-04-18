@@ -1,5 +1,4 @@
 import express from 'express'
-import { envs } from '../config/envs';
 import path from 'path';
 
 interface Options {
