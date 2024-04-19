@@ -1,0 +1,24 @@
+### getTodos
+GET http://localhost:3000/api/todos/
+
+### getTodoById
+GET http://localhost:3000/api/todos/1
+
+### saveTodo
+POST http://localhost:3000/api/todos/
+Content-Type: application/json
+
+{
+  "todo": "Limpiar mi cuarto"
+}
+
+### updateTodo
+PUT http://localhost:3000/api/todos/10
+Content-Type: application/json
+
+{
+  "todo": "Update al todo"
+}
+
+### deleteTodo
+DELETE http://localhost:3000/api/todos/3
