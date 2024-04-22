@@ -1,24 +1,31 @@
 ### getTodos
 GET http://localhost:3000/api/todos/
+//GET https://webserver-node-app-production.up.railway.app/api/todos
 
 ### getTodoById
-GET http://localhost:3000/api/todos/1
+GET http://localhost:3000/api/todos/3
+//GET https://webserver-node-app-production.up.railway.app/api/todos/1
 
 ### saveTodo
 POST http://localhost:3000/api/todos/
+//POST https://webserver-node-app-production.up.railway.app/api/todos/
 Content-Type: application/json
 
 {
-  "todo": "Limpiar mi cuarto"
+  "text": "Correr por las noches",
+  "createAt": "2024-04-21"
 }
 
 ### updateTodo
-PUT http://localhost:3000/api/todos/10
+PUT http://localhost:3000/api/todos/1
+//PUT https://webserver-node-app-production.up.railway.app/api/todos/10
 Content-Type: application/json
 
 {
-  "todo": "Update al todo"
+ "text": "Ver peliculas....",
+ "createAd": "2021-01-23"
 }
 
 ### deleteTodo
-DELETE http://localhost:3000/api/todos/3
+DELETE http://localhost:3000/api/todos/1
+//DELETE https://webserver-node-app-production.up.railway.app/api/todos/2
